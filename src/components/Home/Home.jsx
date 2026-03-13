@@ -1,5 +1,5 @@
 import React from 'react'
-import './HOME.css'
+import './Home.css'
 import ReactTypingEffect from 'react-typing-effect'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -25,7 +25,7 @@ function Home() {
   <div id='home'>
    <div className="leftHome">
     <div className="homeDetails">
-       <div className="line1">I'M</div>
+       <div className="line1"> Hello I'M</div>
        <div className="line2">MANSI BHARGAV</div>
 
        <div className="line3">
