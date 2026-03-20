@@ -190,7 +190,7 @@ useGSAP(()=>{
 
    <div className="rightAbout">
     <Card title="Python" image={py}/>
-    <Card title="DSA" image={dsa}/>
+    {/* <Card title="DSA" image={dsa}/> */}
     <Card title="JavaScript" image={js}/>
     <Card title="MERN STACK" image={mern}/>
      

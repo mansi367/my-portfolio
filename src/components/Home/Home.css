@@ -1,9 +1,13 @@
+
+
+/* =================UPGRADE============================ */
 #home{
   width: 100%;
   min-height: 100vh;
   display: flex;
 }
 
+/* LEFT */
 .leftHome{
   width: 50%;
   min-height: 100vh;
@@ -13,6 +17,7 @@
   color: white;
 }
 
+/* RIGHT */
 .rightHome{
   width: 50%;
   min-height: 100vh;
@@ -28,8 +33,7 @@
   object-fit: contain;
 }
 
-/* text */
-
+/* TEXT */
 .homeDetails{
   font-size: 3vmax;
 }
@@ -49,8 +53,7 @@
   font-size: 1em;
 }
 
-/* button */
-
+/* BUTTON */
 .homeDetails button{
   padding: 10px 30px;
   background-color: rgb(66,180,205);
@@ -68,7 +71,26 @@
   color: rgb(66,180,205);
 }
 
-/* mobile */
+/* 🔥 SOCIAL ICONS */
+.social-icons{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a{
+  font-size: 28px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+  color: rgb(66,180,205);
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgb(66,180,205);
+}
+
+/* MOBILE */
 
 @media (max-width:750px){
 
@@ -76,20 +98,22 @@
     flex-direction: column;
   }
 
-  .rightHome{
-    width: 100%;
-    min-height: 45vh;
-  }
-
-  /* .rightHome img{
-    width: 60%;
-    max-width: 250px;
-  } */
-
   .leftHome{
     width: 100%;
-    min-height: 55vh;
+    height: auto;        /* 🔥 change */
+    min-height: auto;    /* 🔥 change */
+    padding: 80px 20px 20px; /* 🔥 main fix (top space) */
     text-align: center;
   }
 
+  .rightHome{
+    width: 100%;
+    height: auto;        /* 🔥 change */
+    min-height: auto;
+    margin-top: 20px;
+  }
+
+  .social-icons{
+    justify-content: center;
+  }
 }
